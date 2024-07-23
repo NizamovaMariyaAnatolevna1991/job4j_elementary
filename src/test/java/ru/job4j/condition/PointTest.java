@@ -17,34 +17,34 @@ class PointTest {
     }
 
     @Test
-    void when11to22then1Dot4() {
-        double expected = Math.sqrt(2);
-        int x1 = 1;
-        int y1 = 1;
-        int x2 = 2;
-        int y2 = 2;
+    void when3525to3530then5() {
+        double expected = 5;
+        int x1 = 35;
+        int y1 = 25;
+        int x2 = 35;
+        int y2 = 30;
         double output = Point.distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
-    void when1Minus1to2Minus2then1Dot4() {
-        double expected = Math.sqrt(2);
-        int x1 = 1;
-        int y1 = -1;
-        int x2 = 2;
-        int y2 = -2;
+    void whenMinus56to2Minus59then3() {
+        double expected = 3;
+        int x1 = -5;
+        int y1 = 6;
+        int x2 = -5;
+        int y2 = 9;
         double output = Point.distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
-    void when44to55then() {
-        double expected = Math.sqrt(2);
-        int x1 = 4;
-        int y1 = 4;
-        int x2 = 5;
-        int y2 = 5;
+    void when619to719then1() {
+        double expected = 1;
+        int x1 = 6;
+        int y1 = 19;
+        int x2 = 7;
+        int y2 = 19;
         double output = Point.distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
