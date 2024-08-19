@@ -6,10 +6,10 @@ public class Machine {
         int[] coins = {10, 5, 2, 1};
         int[] result = new int[100];
         int size = 0;
-        int ch = money - price;
+        money -= price;
         for (int coin : coins) {
-            while (ch >= coin) {
-                ch -= coin;
+            while (money >= coin) {
+                money -= coin;
                 result[size] = coin;
                 size++;
             }
