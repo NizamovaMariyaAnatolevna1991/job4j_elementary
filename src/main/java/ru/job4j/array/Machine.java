@@ -13,7 +13,7 @@ public class Machine {
                 result[size] = coin;
                 size++;
             }
-
+        }
         return Arrays.copyOf(result, size);
     }
 }
